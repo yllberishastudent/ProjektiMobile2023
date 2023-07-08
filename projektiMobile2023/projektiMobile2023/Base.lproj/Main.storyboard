@@ -16,49 +16,130 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gOr-ZD-Y4J">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gOr-ZD-Y4J">
                                 <rect key="frame" x="0.0" y="71" width="393" height="735"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="uNX-Uw-hrN" customClass="tableCell" customModule="projektiMobile2023" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableCellID" rowHeight="100" id="uNX-Uw-hrN" customClass="TableViewCell" customModule="projektiMobile2023" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uNX-Uw-hrN" id="sev-AE-0Yp">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="pristhina-990x556" translatesAutoresizingMaskIntoConstraints="NO" id="ujX-gj-wbP">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mitrovica" translatesAutoresizingMaskIntoConstraints="NO" id="ujX-gj-wbP">
                                                     <rect key="frame" x="273" y="5" width="100" height="90"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="igw-cI-ypj"/>
+                                                    </constraints>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prishtina" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHy-sw-d6b">
-                                                    <rect key="frame" x="20" y="35.666666666666664" width="90" height="28.999999999999993"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prishtina" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHy-sw-d6b">
+                                                    <rect key="frame" x="20" y="35.666666666666664" width="90" height="28.666666666666664"/>
                                                     <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="24"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="ujX-gj-wbP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dHy-sw-d6b" secondAttribute="trailing" constant="20" id="G3b-JI-Ez8"/>
-                                                <constraint firstItem="dHy-sw-d6b" firstAttribute="centerY" secondItem="sev-AE-0Yp" secondAttribute="centerY" id="U9X-pN-8GE"/>
-                                                <constraint firstItem="dHy-sw-d6b" firstAttribute="leading" secondItem="sev-AE-0Yp" secondAttribute="leading" constant="20" id="g6B-UP-dcT"/>
+                                                <constraint firstItem="dHy-sw-d6b" firstAttribute="centerY" secondItem="sev-AE-0Yp" secondAttribute="centerY" id="LiK-kW-HRK"/>
+                                                <constraint firstItem="ujX-gj-wbP" firstAttribute="trailing" secondItem="sev-AE-0Yp" secondAttribute="trailingMargin" id="Nvf-ab-fAJ"/>
+                                                <constraint firstItem="dHy-sw-d6b" firstAttribute="centerY" secondItem="ujX-gj-wbP" secondAttribute="centerY" id="h5X-5i-FZp"/>
+                                                <constraint firstItem="ujX-gj-wbP" firstAttribute="top" secondItem="sev-AE-0Yp" secondAttribute="topMargin" constant="-6" id="m5o-3y-4sS"/>
+                                                <constraint firstItem="dHy-sw-d6b" firstAttribute="top" secondItem="sev-AE-0Yp" secondAttribute="topMargin" constant="24.666666666666657" id="rQe-i7-8cM"/>
+                                                <constraint firstItem="dHy-sw-d6b" firstAttribute="leading" secondItem="sev-AE-0Yp" secondAttribute="leadingMargin" id="wqS-8m-TGS"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cityImage" destination="ujX-gj-wbP" id="FSJ-IF-HTP"/>
+                                            <outlet property="cityName" destination="dHy-sw-d6b" id="rGh-1F-kPf"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="dD2-m4-dJg"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="NzJ-0a-OnL"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gOr-ZD-Y4J" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="8X7-wz-yKW"/>
+                            <constraint firstItem="gOr-ZD-Y4J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NV4-Sm-xQX"/>
+                            <constraint firstItem="gOr-ZD-Y4J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QyR-9g-cXM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gOr-ZD-Y4J" secondAttribute="bottom" constant="12" id="Rar-cJ-baY"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="citytableView" destination="gOr-ZD-Y4J" id="4n6-r0-b32"/>
+                        <segue destination="YCR-5W-zBC" kind="show" identifier="detailSegue" id="hlQ-eo-g3y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
         </scene>
+        <!--Table View Detail-->
+        <scene sceneID="wKh-7i-Ejg">
+            <objects>
+                <viewController id="YCR-5W-zBC" customClass="TableViewDetail" customModule="projektiMobile2023" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xEz-bd-8j5">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="94K-ON-Sdz">
+                                <rect key="frame" x="118" y="65" width="157" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="prizren" translatesAutoresizingMaskIntoConstraints="NO" id="HqG-Hq-PNp">
+                                <rect key="frame" x="16" y="129" width="367" height="216"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dGm-d3-qXm">
+                                <rect key="frame" x="20" y="378" width="353" height="434"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Amn-Jw-dP6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="94K-ON-Sdz" firstAttribute="top" secondItem="Amn-Jw-dP6" secondAttribute="top" constant="65" id="4zg-Lh-BBa"/>
+                            <constraint firstItem="Amn-Jw-dP6" firstAttribute="bottom" secondItem="dGm-d3-qXm" secondAttribute="bottom" constant="30" id="6os-mf-igU"/>
+                            <constraint firstItem="Amn-Jw-dP6" firstAttribute="trailing" secondItem="dGm-d3-qXm" secondAttribute="trailing" constant="20" id="9n8-UV-XU4"/>
+                            <constraint firstItem="dGm-d3-qXm" firstAttribute="top" secondItem="HqG-Hq-PNp" secondAttribute="bottom" constant="25" id="KQW-XZ-4uV"/>
+                            <constraint firstItem="HqG-Hq-PNp" firstAttribute="width" secondItem="xEz-bd-8j5" secondAttribute="width" multiplier="0.933842" id="SQO-YS-UGd"/>
+                            <constraint firstItem="94K-ON-Sdz" firstAttribute="centerX" secondItem="Amn-Jw-dP6" secondAttribute="centerX" id="Wka-v7-7Tr"/>
+                            <constraint firstItem="HqG-Hq-PNp" firstAttribute="height" secondItem="xEz-bd-8j5" secondAttribute="height" multiplier="0.256532" id="fea-v3-Nny"/>
+                            <constraint firstItem="dGm-d3-qXm" firstAttribute="leading" secondItem="Amn-Jw-dP6" secondAttribute="leading" constant="20" id="hXq-PG-kdK"/>
+                            <constraint firstItem="HqG-Hq-PNp" firstAttribute="top" secondItem="94K-ON-Sdz" secondAttribute="bottom" constant="30" id="mxm-f9-YFB"/>
+                            <constraint firstItem="HqG-Hq-PNp" firstAttribute="centerX" secondItem="Amn-Jw-dP6" secondAttribute="centerX" id="rmf-gk-jty"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="aZd-Ih-Hce"/>
+                    <connections>
+                        <outlet property="image" destination="HqG-Hq-PNp" id="HuF-UY-jRt"/>
+                        <outlet property="info" destination="dGm-d3-qXm" id="10f-3p-g9a"/>
+                        <outlet property="name" destination="94K-ON-Sdz" id="hqL-wY-xAO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DlP-8X-rc2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1154.9618320610687" y="-27.464788732394368"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="pristhina-990x556" width="990" height="556"/>
+        <image name="mitrovica" width="700" height="431"/>
+        <image name="prizren" width="2068" height="1164"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
