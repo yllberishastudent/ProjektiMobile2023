@@ -1,5 +1,4 @@
 import Foundation
-import UIKit
 
 class City {
     var id: String!
