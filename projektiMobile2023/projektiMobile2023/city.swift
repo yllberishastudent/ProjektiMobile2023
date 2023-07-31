@@ -1,13 +1,16 @@
+import Foundation
+import UIKit
+
 class City {
     var id: String!
     var name: String!
-    var imageName: String!
-    var info:String!
+    var cityDescription: String!
+    var image: Data?
     
-    public init(id: String!, name: String!, imageName: String!, info: String!) {
+    public init(id: String!, name: String!, imageName: String!, info: String!,image: Data?) {
         self.id = id
         self.name = name
-        self.imageName = imageName
-        self.info = info
+        self.cityDescription = info
+        self.image = image
     }
 }
