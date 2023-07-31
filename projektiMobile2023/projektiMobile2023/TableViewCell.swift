@@ -5,6 +5,7 @@
 //  Created by mady on 27/06/2023.
 //
 import UIKit
+import CoreData
 
 class TableViewCell: UITableViewCell {
     @IBOutlet weak var cityImage: UIImageView!
