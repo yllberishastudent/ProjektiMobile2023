@@ -25,13 +25,13 @@ The Travel App is a mobile application developed for iOS using Swift. It allows 
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/travel-app.git
+   git clone https://github.com/yllberishastudent/projektimobile2023.git
 
 Open the project in Xcode:
 
 ```bash
-cd travel-app
-open TravelApp.xcodeproj
+cd projektimobile2023
+open projektimobile2023.xcodeproj
 ```
 
 
